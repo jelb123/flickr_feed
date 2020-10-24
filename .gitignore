@@ -1,0 +1,21 @@
+# dependencies
+/flicker-feed-frontend/node_modules
+/flicker-feed-frontend/.pnp
+/flicker-feed-frontend/.pnp.js
+
+# testing
+/flicker-feed-frontend/coverage
+
+# production
+/flicker-feed-frontend/build
+
+# misc
+/flicker-feed-frontend/.DS_Store
+/flicker-feed-frontend/.env.local
+/flicker-feed-frontend/.env.development.local
+/flicker-feed-frontend/.env.test.local
+/flicker-feed-frontend/.env.production.local
+
+/flicker-feed-frontend/npm-debug.log*
+/flicker-feed-frontend/yarn-debug.log*
+/flicker-feed-frontend/yarn-error.log*
