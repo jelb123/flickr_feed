@@ -1,6 +1,4 @@
 import Joi from "joi";
-import { join } from "path";
-import request from "supertest";
 import { getFlickrPublicFeed } from "../../clients/flickr"
 
 const schema = Joi.object({
