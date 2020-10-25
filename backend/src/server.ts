@@ -1,10 +1,6 @@
-import express from 'express';
+import app from './app'
 
-const app = express();
 const PORT = 3001;
-
-
-app.get('/', (req,res) => res.send('Express Server'));
 
 app.listen(PORT, () => {
   console.log(`FlickR Feed API is running at http://localhost:${PORT}`);
