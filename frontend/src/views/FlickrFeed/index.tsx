@@ -47,6 +47,7 @@ export function FlickrFeedView() {
     
     if (cancelToken.current) {
       cancelToken.current.cancel("API call canceled due to new request.");
+      cancelToken.current = undefined
     }
 
     cancelToken.current = axios.CancelToken.source();
@@ -63,7 +64,9 @@ export function FlickrFeedView() {
       const newFeedArr = [...imagesResp.data]
       setFeedArr(newFeedArr)
     } catch(err) {
-      console.error(err)
+      if (!(err instanceof axios.Cancel)) {
+        console.error(err)
+      }
       // TODO: Do something to display error status
     } finally {
       setLoading(false)

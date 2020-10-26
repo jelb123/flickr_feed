@@ -11,7 +11,7 @@ export interface ImageTileProps {
 export function ImageTile({ imageUrl, title, author, published, ...rest }: ImageTileProps) {
   return (
     <GridListTile key={imageUrl} {...rest} >
-      <img src={imageUrl} alt={title}/>
+      <img src={imageUrl} alt={title || 'Image'}/>
       <GridListTileBar
         title={title}
         subtitle={(
